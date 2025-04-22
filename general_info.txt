@@ -1,0 +1,485 @@
+HTML is the standard markup language for creating Web pages.
+
+html--hyper text maarkup language
+
+HTML describes the structure of a Web page
+
+HTML consists of a series of elements
+
+HTML elements tell the browser how to display the content
+
+HTML elements label pieces of content such as "this is a heading", 
+"this is a paragraph", "this is a link", etc.
+
+<!DOCTYPE html> --> declaration defines that this document is an HTML5 document
+<html>  -->element is the root element of an HTML page
+<head> -->element contains meta information about the HTML page
+<title>  -->element specifies a title for the HTML page (which is shown in the browser's title    bar or in the page's tab)
+<body>  --> element defines the document's body, and is a container for all the visible contents, such as headings, paragraphs, images, hyperlinks, tables, lists, etc.
+<h1>
+<p>
+
+
+
+html element:
+start tag ,some content,end tag
+
+<h1>	My First Heading	</h1>
+<p>	My first paragraph.	</p>
+<br>	none	none
+
+Note: Some HTML elements have no content (like the <br> element). These elements are called empty elements. Empty elements do not have an end tag!
+
+web browser is used to read html documents and display them correctly.
+
+A browser does not display the HTML tags, but uses them to determine how to display the document
+
+
+<html>
+  <head>
+     <title>Page title</title>
+  </head>
+
+  <body>
+    <h1>This is a heading</h1>
+    <p>This is a paragraph.</p>
+    <p>This is another paragraph.</p>
+  </body>
+
+</html>
+
+
+Note: The content inside the <body> section will be displayed in a browser. 
+The content inside the <title> element will be shown in the browser's title bar or in the page's tab
+
+
+
+The <!DOCTYPE> Declaration:
+The <!DOCTYPE> declaration represents the document type, and helps browsers to display web pages correctly.
+
+It must only appear once, at the top of the page (before any HTML tags).
+
+The <!DOCTYPE> declaration is not case sensitive.
+
+HTML Headings:
+HTML headings are defined with the <h1> to <h6> tags.
+
+<h1> defines the most important heading. <h6> defines the least important heading: 
+
+HTML Paragraphs
+HTML paragraphs are defined with the <p> tag
+
+HTML Links
+HTML links are defined with the <a> tag:
+<a href="https://www.w3schools.com">This is a link</a>
+
+
+The link's destination is specified in the href attribute. 
+Attributes are used to provide additional information about HTML elements.
+
+
+HTML Images
+HTML images are defined with the <img> tag.
+
+The source file (src), alternative text (alt), width, and height are provided as attributes:
+
+
+<img src="w3schools.jpg" alt="W3Schools.com" width="104" height="142">
+
+HTML Attributes:
+HTML attributes provide additional information about HTML elements.
+Attributes are always specified in the start tag
+All HTML elements can have attributes
+Attributes usually come in name/value pairs like: name="value"
+
+  --The href Attribute
+The <a> tag defines a hyperlink. The href attribute specifies the URL of the page the link goes to:
+
+<a href="https://www.w3schools.com">Visit W3Schools</a>
+
+  --The src Attribute
+The <img> tag is used to embed an image in an HTML page. The src attribute specifies the path to the image to be displayed:
+
+
+<img src="img_girl.jpg">
+
+There are two ways to specify the URL in the src attribute:
+absolute path:
+An absolute path is a complete URL that specifies the exact location of a file on the web or the system. It includes the full domain name and file path.
+eg.
+<img src="https://www.example.com/images/photo.jpg" alt="Example Image">
+the image is loaded from an external website, and the full URL is provided.
+eg.
+<img src="C:/Users/YourName/Pictures/photo.jpg" alt="Local Image">
+ This refers to an image stored in a specific folder on your computer.
+
+
+relative path:
+A relative path specifies the location of a file relative to the current HTML file. It does not include the full domain or drive name.
+
+eg.
+<img src="images/photo.jpg" alt="Photo">
+
+Absolute paths are best for linking external resources (e.g., CDN links, external images).
+
+Relative paths are preferred for local project files, making it easier to move the project without breaking links.
+
+The width and height Attributes:
+The <img> tag should also contain the width and height attributes, which specify the width and height of the image (in pixels):
+<img src="img_girl.jpg" width="500" height="600">
+
+The alt Attribute:
+The required alt attribute for the <img> tag specifies an alternate text for an image, if the image for some reason cannot be displayed.
+
+ This can be due to a slow connection, or an error in the src attribute, or if the user uses a screen reader.
+
+<img src="img_girl.jpg" alt="Girl with a jacket">
+
+The style Attribute
+The style attribute is used to add styles to an element, such as color, font, size, and more.
+<p style="color:red;">This is a red paragraph.</p>
+
+The lang Attribute
+You should always include the lang attribute inside the <html> tag, to declare the language of the Web page. This is meant to assist search engines and browsers.
+
+<!DOCTYPE html>
+<html lang="en">
+<body>
+...
+</body>
+</html>
+
+The title Attribute
+The title attribute defines some extra information about an element.
+The value of the title attribute will be displayed as a tooltip when you mouse over the element:
+
+<p title="I'm a tooltip">This is a paragraph.</p>
+
+Always Quote Attribute Values
+
+
+Summary
+All HTML elements can have attributes
+The href attribute of <a> specifies the URL of the page the link goes to
+The src attribute of <img> specifies the path to the image to be displayed
+The width and height attributes of <img> provide size information for images
+The alt attribute of <img> provides an alternate text for an image
+The style attribute is used to add styles to an element, such as color, font, size, and more
+The lang attribute of the <html> tag declares the language of the Web page
+The title attribute defines some extra information about an element
+
+HTML Headings:
+HTML headings are titles or subtitles that you want to display on a webpage.
+HTML headings are defined with the <h1> to <h6> tags.
+Note: Browsers automatically add some white space (a margin) before and after a heading.
+
+Note: Use HTML headings for headings only. Don't use headings to make text BIG or bold.
+
+
+Each HTML heading has a default size. However, you can specify the size for any heading with the style attribute, using the CSS font-size property:
+
+<h1 style="font-size:60px;">Heading 1</h1>
+
+HTML Display:
+You cannot be sure how HTML will be displayed.
+
+Large or small screens, and resized windows will create different results.
+
+With HTML, you cannot change the display by adding extra spaces or extra lines in your HTML code.
+
+The browser will automatically remove any extra spaces and lines when the page is displayed:
+
+
+HTML Styles:
+The HTML style attribute is used to add styles to an element, such as color, font, size, and more.
+
+The HTML style attribute has the following syntax:
+
+<tagname style="property:value;">
+
+background color==>
+eg.
+<h1 style="background-color:pink">this is a first page</h1>
+<p style="background-color:yellow">hello i am shivali</p>
+
+Text Color==>
+eg.
+<h1 style="color:blue;">This is a heading</h1>
+<p style="color:red;">This is a paragraph.</p>
+
+Fonts==>
+The CSS font-family property defines the font to be used for an HTML element:
+eg.
+<h1 style="font-family:verdana;">This is a heading</h1>
+<p style="font-family:courier;">This is a paragraph.</p>
+
+Text Size==>
+The CSS font-size property defines the text size for an HTML element:
+
+
+<h1 style="font-size:300%;">This is a heading</h1>
+<p style="font-size:160%;">This is a paragraph.</p>
+
+Text Alignment==>
+The CSS text-align property defines the horizontal text alignment for an HTML element:
+
+
+<h1 style="text-align:center;">Centered Heading</h1>
+<p style="text-align:center;">Centered paragraph.</p>
+
+------------
+HTML Formatting Elements
+
+<b> - Bold text
+<strong> - Important text
+<i> - Italic text
+<em> - Emphasized text
+<mark> - Marked text
+<small> - Smaller text
+<del> - Deleted text
+<ins> - Inserted text
+<sub> - Subscript text
+<sup> - Superscript text
+
+
+
+HTML <abbr> for Abbreviations:
+
+The HTML <abbr> tag defines an abbreviation or an acronym, like "HTML", "CSS", "Mr.", "Dr.", "ASAP", "ATM".
+
+Marking abbreviations can give useful information to browsers, translation systems and search-engines.
+
+Tip: Use the global title attribute to show the description for the abbreviation/acronym when you mouse over the element. 
+
+eg.
+<p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+
+
+
+HTML <address> for Contact Information:
+The HTML <address> tag defines the contact information for the author/owner of a document or an article.
+
+The contact information can be an email address, URL, physical address, phone number, social media handle, etc.
+
+The text in the <address> element usually renders in italic, and browsers will always add a line break before and after the <address> element.
+
+TML <cite> for Work Title
+The HTML <cite> tag defines the title of a creative work (e.g. a book, a poem, a song, a movie, a painting, a sculpture, etc.).
+
+Note: A person's name is not the title of a work.
+
+The text in the <cite> element usually renders in italic.
+
+<p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>
+
+HTML Comment Tag:
+<!-- Write your comments here -->
+
+for multiple elements:
+You can also hide more than one line. Everything between the <!-- and the --> will be hidden from the display.
+eg.
+<p>This is a paragraph.</p>
+<!--
+<p>Look at this cool image:</p>
+<img border="0" src="pic_trulli.jpg" alt="Trulli">
+-->
+<p>This is a paragraph too.</p>
+
+html color==>
+RGB--red green blue
+
+RGB Color Values
+Each parameter (red, green, and blue) defines the intensity of the color with a value between 0 and 255.
+
+For example, rgb(255, 0, 0) is displayed as red, because red is set to its highest value (255), and the other two (green and blue) are set to 0.
+
+Another example, rgb(0, 255, 0) is displayed as green, because green is set to its highest value (255), and the other two (red and blue) are set to 0.
+
+To display black, set all color parameters to 0, like this: rgb(0, 0, 0).
+
+To display white, set all color parameters to 255, like this: rgb(255, 255, 255).
+
+
+
+
+
+Shades of gray are often defined using equal values for all three parameters:
+
+
+
+RGBA Color Values:
+RGBA color values are an extension of RGB color values with an Alpha channel - which specifies the opacity for a color.
+
+An RGBA color value is specified with:
+
+rgba(red, green, blue, alpha)
+
+The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (not transparent at all):
+
+
+HTML HEX Colors==>
+A hexadecimal color is specified with: #RRGGBB, where the RR (red), GG (green) and BB (blue) hexadecimal integers specify the components of the color.
+
+
+To display black, set all color parameters to 00, like this: #000000.
+
+To display white, set all color parameters to ff, like this: #ffffff.
+
+HTML Styles - CSS:
+CSS stands for Cascading Style Sheets.
+
+CSS saves a lot of work. It can control the layout of multiple web pages all at once.
+
+Tip: The word cascading means that a style applied to a parent element will also apply to all children elements within the parent. So, if you set the color of the body text to "blue", all headings, paragraphs, and other text elements within the body will also get the same color (unless you specify something else)!
+
+
+CSS can be added to HTML documents in 3 ways:
+
+Inline - by using the style attribute inside HTML elements
+Internal - by using a <style> element in the <head> section
+External - by using a <link> element to link to an external CSS file
+The most common way to add CSS, is to keep the styles in external CSS files.
+
+Inline CSS
+An inline CSS is used to apply a unique style to a single HTML element.
+
+An inline CSS uses the style attribute of an HTML element.
+eg.
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1 style="color:blue;">A Blue Heading</h1>
+
+<p style="color:red;">A red paragraph.</p>
+
+</body>
+</html>
+
+
+Internal CSS
+An internal CSS is used to define a style for a single HTML page.
+
+An internal CSS is defined in the <head> section of an HTML page, within a <style> element.
+eg.
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {background-color: powderblue;}
+h1   {color: blue;}
+p    {color: red;}
+</style>
+</head>
+<body>
+
+<h1>This is a heading</h1>
+<p>This is a paragraph.</p>
+
+</body>
+</html>
+
+External CSS
+An external style sheet is used to define the style for many HTML pages.
+
+To use an external style sheet, add a link to it in the <head> section of each HTML page:
+eg.
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<h1>This is a heading</h1>
+<p>This is a paragraph.</p>
+
+</body>
+</html>
+
+The external style sheet can be written in any text editor. The file must not contain any HTML code, and must be saved with a .css extension.
+
+
+eg.
+"styles.css":
+body {
+  background-color: powderblue;
+}
+h1 {
+  color: blue;
+}
+p {
+  color: red;
+}
+
+
+----------------
+html links:
+1.HTML Links - Hyperlinks
+HTML links are hyperlinks.
+
+You can click on a link and jump to another document.
+
+When you move the mouse over a link, the mouse arrow will turn into a little hand.
+
+Note: A link does not have to be text. A link can be an image or any other HTML element!
+
+The HTML <a> tag defines a hyperlink. 
+
+2.HTML Links - Syntax
+It has the following syntax:
+
+<a href="url">link text</a>
+eg.
+<a href="https://www.w3schools.com/">Visit W3Schools.com!</a>
+
+By default, links will appear as follows in all browsers:
+
+An unvisited link is underlined and blue
+A visited link is underlined and purple
+An active link is underlined and red
+
+3.HTML Links - The target Attribute
+
+
+--------
+
+HTML Div Element:
+The <div> element is used as a container for other HTML elements.
+The <div> Element
+The <div> element is by default a block element, meaning that it takes all available width, and comes with line breaks before and after.
+
+HTML Tables:
+<!DOCTYPE html>
+<html>
+<style>
+table, th, td {
+  border:1px solid black;
+}
+</style>
+<body>
+
+<h2>A basic HTML table</h2>
+
+<table style="width:100%">
+  <tr>
+    <th>Company</th>
+    <th>Contact</th>
+    <th>Country</th>
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>Maria Anders</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>Centro comercial Moctezuma</td>
+    <td>Francisco Chang</td>
+    <td>Mexico</td>
+  </tr>
+</table>
+
+<p>To understand the example better, we have added borders to the table.</p>
+
+</body>
+</html>
